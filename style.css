@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #2C3F5C;
+}
+
+
+.innerSection {
+    overflow: hidden;
+    height: 33vh;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.innerSection img {
+    width: 70%;
+    height: 70%;
+}
+h1 {
+    font-size: 4rem;
+    color: white;
+}
+h2 {
+    font-size: 2rem;
+    color: white;
+}
+.btn{
+    font-size: 1.5rem;
+    padding: 0.3em 1.1em;
+    margin: 0 0.4em;
+}
+#sec3 {
+    display: flex;
+    flex-wrap: wrap;
+}
