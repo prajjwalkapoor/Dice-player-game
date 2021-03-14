@@ -28,12 +28,27 @@ h2 {
     font-size: 2rem;
     color: white;
 }
-.btn{
-    font-size: 1.5rem;
-    padding: 0.3em 1.1em;
-    margin: 0 0.4em;
-}
 #sec3 {
     display: flex;
     flex-wrap: wrap;
+}
+button {
+    background-color:#9C060C ;
+    background-position: center;
+    border-radius: 2px;
+    border-radius: 10%;
+    color: white;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: 30px;
+    outline: none;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.1s;
+}
+button:hover{
+ border: 2px solid white; 
+ background-color: #0c121a;  
 }
