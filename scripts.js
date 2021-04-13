@@ -1,17 +1,18 @@
 var player1 = "Player1"
 var player2 = "Player2"
-
-
+var randomNumber1 = Math.floor(((Math.random())*6)+1)
+var randomNumber2 = Math.floor(((Math.random())*6)+1)
+var score = 0
 //Function to roll the dice
 function rollTheDice() {
 
     // for player 1
-var randomNumber1 = Math.floor(((Math.random())*6)+1)
+
 var imgSrc = "images/dice" + randomNumber1 + ".png"
 document.querySelectorAll("img")[0].setAttribute("src",imgSrc)
 
 // for player 2
-var randomNumber2 = Math.floor(((Math.random())*6)+1)
+
 var imgSrc = "images/dice" + randomNumber2 + ".png"
 document.querySelectorAll("img")[1].setAttribute("src",imgSrc)
 
@@ -36,6 +37,3 @@ function nameEdit() {
        document.querySelector("#p2").innerHTML = player2 + " score"
 
 }
-
-document.querySelector("#refresh").addEventListener("click" , function (){rollTheDice()})
-document.querySelector("#nameChange").addEventListener("click" , function (){nameEdit()})
