@@ -1,7 +1,10 @@
 var player1 = "Player1"
 var player2 = "Player2"
+
+
 //Function to roll the dice
 function rollTheDice() {
+
     // for player 1
 var randomNumber1 = Math.floor(((Math.random())*6)+1)
 var imgSrc = "images/dice" + randomNumber1 + ".png"
@@ -13,10 +16,10 @@ var imgSrc = "images/dice" + randomNumber2 + ".png"
 document.querySelectorAll("img")[1].setAttribute("src",imgSrc)
 
    if (randomNumber1 > randomNumber2) {
-     document.querySelector("h1").innerHTML = player1+ "- Wins!🚩 ";
+     document.querySelector("h1").innerHTML = player1+ "- Wins! this round🚩 ";
     }
     else if (randomNumber2 > randomNumber1) {
-    document.querySelector("h1").innerHTML = player2+ "- Wins!🚩 ";
+    document.querySelector("h1").innerHTML = player2+ "- Wins! this round🚩 ";
       }
     else {
         document.querySelector("h1").innerHTML = "Draw!";
@@ -29,5 +32,10 @@ function nameEdit() {
     player2 = prompt("enter player2 name")     
        document.querySelectorAll("h2")[0].innerHTML=player1;
        document.querySelectorAll("h2")[1].innerHTML=player2;
+       document.querySelector("#p1").innerHTML = player1 + " score"
+       document.querySelector("#p2").innerHTML = player2 + " score"
 
 }
+
+document.querySelector("#refresh").addEventListener("click" , function (){rollTheDice()})
+document.querySelector("#nameChange").addEventListener("click" , function (){nameEdit()})

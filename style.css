@@ -1,20 +1,26 @@
 *{
     margin: 0px;
     padding: 0px;
+    color: white;
 }
 body{
     background-color: #2C3F5C;
 }
+.p-score{
+    margin-top: 1.5rem;
+}
 
-
+.player-name{
+    font-size: 1.5rem;
+}
 .innerSection {
     overflow: hidden;
-    height: 33vh;
     width: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin: 3rem 0;
 }
 .innerSection img {
     width: 70%;
@@ -31,18 +37,23 @@ h2 {
 #sec3 {
     display: flex;
     flex-wrap: wrap;
+
+}
+
+img{
+    width: 30%;
+    height: 30%;
 }
 button {
     background-color:#9C060C ;
     background-position: center;
-    border-radius: 2px;
-    border-radius: 10%;
+    border-radius: 20px;
     color: white;
     cursor: pointer;
     font-family: Arial;
     font-size: 30px;
     outline: none;
-    padding: 20px 30px;
+    padding: 1rem 1.5rem;
     text-transform: uppercase;
     margin-left: 10px;
     margin-right: 10px;

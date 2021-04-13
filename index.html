@@ -17,15 +17,21 @@
         <div class="column">
             <h2>Player 1</h2>
             <img src="images/dice6.png" alt="">
+            <div class="p-score">
+                <span class="player-name" id="p1">Player 1 score : </span> <span id="p1-s">&nbsp;</span>
+            </div>
         </div>
         <div class="column">
             <h2>Player 2</h2>
             <img src="images/dice6.png" alt="">
+            <div class="p-score">
+                <span class="player-name" id="p2">Player 2 score : </span> <span id="p2-s">&nbsp;</span>
+            </div>
         </div>
     </div>
     <div class="innerSection" id="sec3">
-        <button class="btn" id="refresh" onClick="rollTheDice()">Play</button>
-        <button class="btn" id="nameChange" onClick="nameEdit()">Change Name</button>
+        <button class="btn" id="refresh" >Play</button>
+        <button class="btn" id="nameChange" >Change Name</button>
     </div>
 </body>
 <script src="scripts.js" ></script>
